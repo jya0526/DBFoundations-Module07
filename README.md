@@ -15,9 +15,9 @@
   Assignment 07  
   https://github.com/jya0526/DBFoundations-Module07
 
-  ## User Experience: An Overview of User-Defined Functions (UDF)
+## User Experience: An Overview of User-Defined Functions (UDF)
  
-  ### Introduction
+### Introduction
 The purpose of this week’s writeup is to demonstrate my understanding of this week’s material. 
 This week’s material mainly concerns the use of User-Defined Functions, which are functions that are executed by the database. Concepts covered include the      following:
 * Use Cases
@@ -25,10 +25,10 @@ This week’s material mainly concerns the use of User-Defined Functions, which 
   
 Sources from multiple websites will be referenced in the write-up. Please consult the ‘Works Cited’ page for more information.
 
-  ### User Initiative: UDF Use Cases
+### User Initiative: UDF Use Cases
 UDFs can be used to increase the efficiency of applications. Specifically, it can help decrease the rate of data transfers between the application and database layer  (Custer, “What are User-Defined Functions”). The fewer data transfers there are, the less latency an application has. This can be especially useful for streamlining functions by removing redundant steps.
 
-  ### Multi-Functionality: Scalar, Inline, and Multi-Statement
+### Multi-Functionality: Scalar, Inline, and Multi-Statement
   UDFs have different types of functions, depending on the needs of the developer.   
   There are three types of UDFs, as follows:
  * Scalar
