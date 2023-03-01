@@ -1,5 +1,7 @@
 # DBFoundations-Module07 Webpage
 
+# Link: https://jya0526.github.io/DBFoundations-Module07/
+
 # Table of Contents  
 1. [Assignment07_Writeup](https://github.com/jya0526/DBFoundations-Module07/blob/main/Assignment07_WriteUp.pdf) 
 
