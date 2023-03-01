@@ -45,7 +45,7 @@ UDFs can be used to increase the efficiency of applications. Specifically, it ca
   Multi-statement functions return a table as the output. However, this output table can be modified and aggregated by the user.   
   They can contain only one statement, or more than one statement at a time (Erkec, “Multi-Statement Table-Valued Functions”). 
   
-  ### Works Cited
+### Works Cited
  * https://www.cockroachlabs.com/blog/udfs-in-sql/  
  * https://learn.microsoft.com/en-us/sql/relational-databases/user-defined-functions/scalar-udf-inlining?view=sql-server-ver16  
  * https://www.sqlshack.com/use-sql-server-built-functions-create-user-defined-scalar-functions/  
