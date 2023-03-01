@@ -183,7 +183,7 @@ Select * From vInventories;
 go
 
 /********************************* Questions and Answers *********************************/
-Print
+--Print
 'NOTES------------------------------------------------------------------------------------ 
  1) You must use the BASIC views for each table.
  2) Remember that Inventory Counts are Randomly Generated. So, your counts may not match mine
@@ -194,12 +194,12 @@ Print
 -- Use a function to format the price as US dollars.
 -- Order the result by the product name.
 	
-	Select * From vProducts;
-	GO
-	Select ProductName, UnitPrice from VProducts;
-	GO
-	Select ProductName, UnitPrice From VProducts Order By ProductName;
-	Go
+	--Select * From vProducts;
+	--GO
+	--Select ProductName, UnitPrice from VProducts;
+	--GO
+	--Select ProductName, UnitPrice From VProducts Order By ProductName;
+	--Go
 	
 	Select 
 		ProductName,
@@ -242,7 +242,8 @@ Declare @Date as Date = GetDate();
 	From vProducts as P
 		Inner Join vInventories as I
 			On P.ProductID = I.ProductID
-	Order By ProductName ASC;
+		Group By ProductName, InventoryDate, Count
+	Order By ProductName
 -- <Put Your Code Here> --
 
 go
@@ -255,14 +256,15 @@ go
 
 Create View vProductInventories
 As
-	Select Top 1000000000
+	Select Top 100000000000
 		ProductName,
 		[InventoryDate] = DateName(mm, InventoryDate) + ', '+ DateName(Year, InventoryDate),
 		[InventoryCount] = COUNT
 	From vProducts as P
 		Inner Join vInventories as I
 			On P.ProductID = I.ProductID
-	Order By ProductName Asc;
+		Group By ProductName, InventoryDate, Count
+	Order By ProductName;
 
 
 -- <Put Your Code Here> --
